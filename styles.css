@@ -47,6 +47,11 @@ video {
   height: auto;
 }
 
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --navy-500-main-bg: hsl(233, 47%, 7%);
   --blue-950-card-bg:hsl(244, 37%, 16%);
@@ -65,24 +70,24 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 25px;
+  padding: 1.5625rem;
 }
 
 .card-holder {
   background-color: var(--blue-950-card-bg);
   height: 48.75rem;
   width: 20.625rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 
 .image-container {
-  height: 240px;
+  height: 15rem;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
   background-color: var(--purple-500-accent);
   background-image: url("images/image-header-mobile.jpg");
   background-size: cover;
@@ -91,14 +96,14 @@ body {
 }
 
 .content-container {
-  padding: 25px;
+  padding: 1.5625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 .content-container .title-paragraph-container {
-  height: 225px;
+  height: 14.0625rem;
 }
 .content-container .title {
   text-align: center;
@@ -115,30 +120,30 @@ body {
   text-align: center;
   font-family: "Inter", sans-serif;
   color: var(--white-main-paragraph);
-  padding: 7px;
-  margin: 5px;
+  padding: 0.4375rem;
+  margin: 0.3125rem;
   line-height: 1.66;
 }
 .content-container .stats-container {
-  height: 250px;
+  height: 15.625rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 70px);
+  grid-template-rows: repeat(3, 4.375rem);
   justify-items: center;
   align-items: center;
-  margin-top: 15px;
-  gap: 10px;
+  margin-top: 0.9375rem;
+  gap: 0.625rem;
 }
 .content-container .metric {
   font-family: "Inter", sans-serif;
   color: var(--white-main-paragraph);
-  margin: 5px;
+  margin: 0.3125rem;
   text-align: center;
 }
 .content-container .stats-text {
   font-family: "Lexend Deca", sans-serif;
   color: var(--white-stat-headings);
-  font-size: 12.5px;
+  font-size: 0.78125rem;
   font-weight: 300;
   letter-spacing: 0.1em;
 }
@@ -146,37 +151,37 @@ body {
 @media (min-width: 60rem) {
   .card-holder {
     flex-direction: row-reverse;
-    height: 445px;
-    width: 1125px;
+    height: 27.8125rem;
+    width: 70.3125rem;
   }
   .image-container {
     height: 100%;
-    width: 562, 5px;
+    width: 35.15625rem;
     background-color: var(--purple-500-accent);
     background-image: url("images/image-header-desktop.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
     border-top-left-radius: 0;
   }
   .content-container {
     display: flex;
     align-items: center;
-    width: 562, 5px;
+    width: 35.15625rem;
   }
   .content-container .title-paragraph-container {
-    height: 277px;
+    height: 17.3125rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 22.5px;
-    padding: 40px;
+    gap: 1.40625rem;
+    padding: 2.5rem;
   }
   .content-container .title-paragraph-container .title {
     text-align: start;
-    padding-top: 10px;
+    padding-top: 0.625rem;
   }
   .content-container .title-paragraph-container .paragraph {
     text-align: start;
@@ -184,20 +189,18 @@ body {
     margin: 0;
   }
   .content-container .stats-container {
-    height: 85px;
-    width: 430px;
+    height: 5.3125rem;
+    width: 26.875rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 70px;
+    grid-template-rows: 4.375rem;
     justify-items: start;
     align-items: center;
-    margin-top: 15px;
-    gap: 70px;
-    margin-right: 10px;
+    margin-top: 0.9375rem;
+    gap: 4.375rem;
   }
   .content-container .metric {
     margin: 0;
-    padding: 0;
     text-align: start;
   }
 }/*# sourceMappingURL=styles.css.map */
