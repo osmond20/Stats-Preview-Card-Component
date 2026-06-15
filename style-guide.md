@@ -19,7 +19,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- White (main heading, stats): hsl(0, 0%, 100%)
+- White (main heading, stats): hsl(277, 64%, 61%)
 - White (main paragraph): hsla(0, 0%, 100%, 0.75)
 - White (stat headings): hsla(0, 0%, 100%, 0.6)
 

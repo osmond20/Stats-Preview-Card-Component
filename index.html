@@ -3,31 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+  <link 
+  rel="preload" 
+  href="/fonts/inter-v20-latin-700.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+  <link 
+  rel="preload" 
+  href="/fonts/inter-v20-latin-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+    <link 
+  rel="preload" 
+  href="/fonts/lexend-deca-v25-latin-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+    <main class="parent-container">
+      <article class="card-holder">
+        <div class="image-container">
+        </div>
 
-  Get insights that help your business grow.
+        <section class="content-container">
+          <div class="title-paragraph-container">
+              <h1 class="title">Get <span class="coloured-text">insights</span> that help your business grow.</h1>
+              <p class="paragraph">
+                Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                experience, and overall efficiency.
+              </p>
+          </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+          <div class="stats-container">
+            <div class="stat1">
+              <h2 class="metric">10k+</h2> <p class="stats-text">COMPANIES</p>
+            </div>
+            <div class="stat2">
+              <h2 class="metric">314</h2> <p class="stats-text">TEMPLATES</p>
+            </div>
+            <div class="stat3">
+              <h2 class="metric">12M+</h2> <p class="stats-text">QUERIES</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
 </body>
 </html>

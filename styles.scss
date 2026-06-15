@@ -1,0 +1,223 @@
+//Fonts
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/inter-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/inter-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/lexend-deca-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lexend-deca-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/lexend-deca-v25-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+$font-size: 0.9375rem;
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root{
+  --navy-500-main-bg: hsl(233, 47%, 7%);
+  --blue-950-card-bg:hsl(244, 37%, 16%);
+  --purple-500-accent: hsl(277, 64%, 61%);
+
+  --white-main-heading-stats:hsl(277, 64%, 61%);
+  --white-main-paragraph:hsla(0, 0%, 100%, 0.75);
+  --white-stat-headings:hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+  background-color: var(--navy-500-main-bg);
+}
+.parent-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+.card-holder{
+  background-color: var(--blue-950-card-bg);
+  height:48.75rem;
+  width:20.625rem;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.image-container{
+  height: 240px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--purple-500-accent);
+  background-image: url("images/image-header-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.content-container{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .title-paragraph-container{
+    height: 225px;
+  }
+
+  .title{
+    text-align: center;
+    color:var(--white-main-paragraph);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.688rem, calc(1.450rem + 1.153vw), 2.250rem);
+
+    .coloured-text{
+      color: var(--white-main-heading-stats);
+    }
+  }
+
+  .paragraph{
+    font-size: $font-size;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color:var(--white-main-paragraph);
+    padding: 7px;
+    margin: 5px;
+    line-height: 1.66;
+  }
+
+  .stats-container{
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 70px);
+    justify-items: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .metric{
+    font-family: 'Inter', sans-serif;
+    color:var(--white-main-paragraph);
+    margin:5px;
+    text-align: center;
+  }
+
+  .stats-text{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--white-stat-headings);
+    font-size: 12.5px;
+    font-weight: 300;
+    letter-spacing: 0.10em;
+  }
+}
+
+@media(min-width:60rem){
+  .card-holder{
+    flex-direction: row-reverse;
+    height: 445px;
+    width: 1125px;
+  }
+
+  .image-container{
+    height: 100%;
+    width: 562,5px;
+    background-color: var(--purple-500-accent);
+    background-image: url("images/image-header-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0;
+  }
+
+  .content-container{
+    display: flex;
+    align-items: center;
+    width: 562,5px;
+
+  .title-paragraph-container{
+    height: 277px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 22.5px;
+    padding: 40px;
+
+    .title{
+      text-align: start;
+      padding-top: 10px;
+    }
+
+    .paragraph{
+      text-align: start;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+    .stats-container{
+      height: 85px;
+      width:430px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 70px;
+      justify-items: start;
+      align-items: center;
+      margin-top: 15px;
+      gap: 70px;
+      margin-right: 10px;
+    }
+
+    .metric{
+      margin:0;
+      padding:0;
+      text-align: start;
+    }
+  }
+}
