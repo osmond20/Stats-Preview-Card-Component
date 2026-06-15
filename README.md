@@ -25,7 +25,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-09kJOmllEI)
 - Live Site URL: [Stats Preview Card Component Site](https://osmond20.github.io/Stats-Preview-Card-Component/)
 
 ## My process
